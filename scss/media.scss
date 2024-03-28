@@ -1,0 +1,95 @@
+@media (max-width: 1200px) {
+.home{
+  padding: 200px 0 220px;
+}
+  .home__info{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@mixin burgerline{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #FFFFFF;
+  $direct: -10px;
+  transition: 0.5s;
+
+}
+@media (max-width: 767px) {
+  .header .nav{
+    display: none;
+    position: fixed;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    width: 50%;
+    background: aqua;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    &.active{
+      display: flex;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      right: 0;
+      width: 50%;
+      background: aqua;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .nav__link{
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+
+    }
+  }
+  .burger_menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    &.active{
+      .burger_menu__line{
+        background: none;
+        &:before{
+          transform: rotate(45deg);
+          top: 0;
+        }
+        &:after{
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+      }
+    }
+    &__line{
+      width: 30px;
+      height: 2px;
+      background: #FFFFFF;
+      position: relative;
+      transition: 0.5s;
+
+
+      &:before{
+        @include burgerline;
+        top: -10px;
+      }
+      &:after{
+        @include burgerline;
+        bottom: -10px;
+      }
+    }
+  }
+  .header{
+    border-bottom: none;
+  }
+  
+}

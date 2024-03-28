@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+  .home {
+    padding: 200px 0 220px;
+  }
+
+  .home__info {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .header .nav {
+    display: none;
+  }
+}

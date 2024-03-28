@@ -1,0 +1,90 @@
+.about-us{
+  padding: 100px 0 70px;
+  background: #F6F6F8;
+  .text-block{
+    padding-top: 52px;
+    &__title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 53px;
+
+      /* dark */
+
+      color: #323232;
+      margin-bottom: 40px;
+      max-width: 424px;
+    }
+    &__text{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+
+      /* grey */
+
+      color: #999999;
+      margin-bottom: 30px;
+      max-width: 490px;
+    }
+  &__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+
+    color: #4985FF;
+  }
+  }
+  .line{
+    border-top: 1px solid #E0E0E0;
+    margin-top: 90px;
+    margin-bottom: 70px;
+  }
+  .img{
+    text-align: right;
+    &__img{
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      border-radius:30px ;
+    }
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-around;
+    &__items{
+      display: flex;
+      max-width: 104px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    &__img{
+      max-width: 30px;
+      max-height: 30px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  &__number{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+
+    color: #000000;
+}
+    &__text{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 17px;
+
+      /* grey */
+
+      color: #999999;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.all-services__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+.all-services__items__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  /* grey */
+  color: #999999;
+}
+.all-services__items__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4985FF;
+}
+.all-services__items__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  /* Accent */
+  color: #4985FF;
+}
+.all-services__items__line {
+  border: 1px solid #E0E0E0;
+}

@@ -1,0 +1,36 @@
+.header {
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #A1A1A1;
+}
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .nav__link {
+  display: inline-block;
+  margin-right: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+}
+.header .nav__link:hover:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 2px;
+  background: #FFFFFF;
+  bottom: -40px;
+  left: -25%;
+}
+.header .nav__link:last-child {
+  margin-right: 0;
+}
